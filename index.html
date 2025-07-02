@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gender Equality</title>
+  <link rel="stylesheet" href="Gender equality.css" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f6fc;
+      color: #333;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #0073e6;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #005bb5;
+    }
+
+    /* Marquee */
+    .marquee-container {
+      background-color: #d0e6ff;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 20px 0;
+      margin: 20px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      animation: scroll-left 10s linear infinite;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #003366;
+      text-align: center;
+      width: 100%;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Content */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #005bb5;
+      margin-bottom: 20px;
+    }
+     h3{
+    text-align: center;
+      color: #12bd12;
+      margin-bottom: 20px;
+  }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .images img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .info p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* Review Section */
+    .review {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    .review h3 {
+      text-align: center;
+      color: #005bb5;
+      margin-bottom: 15px;
+    }
+
+    .review input,
+    .review textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .review button {
+      padding: 10px 20px;
+      background-color: #0073e6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .review button:hover {
+      background-color: #005bb5;
+    }
+
+    .submitted-reviews {
+      margin-top: 20px;
+    }
+
+    .submitted-reviews p {
+      padding: 10px;
+      background-color: #e6f2ff;
+      border-left: 4px solid #0073e6;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .images {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .marquee {
+        font-size: 1.5rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Marquee -->
+  <div class="marquee-container">
+    <div class="marquee">Gender Equality</div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container">
+
+    <!-- Images -->
+    <h2>Images on Gender Equality</h2>
+    <div class="images">
+      <img src="image1.html.jpg" alt="Equal Rights">
+      <img src="image3.html.jpg" alt="Education for All">
+      <img src="image2.html.jpg" alt="Women Empowerment">
+    </div>
+
+    <!-- Info -->
+    <h2>About Gender Equality</h2>
+    <div class="info">
+      <p>Gender equality means everyone, regardless of gender, has equal rights, responsibilities,
+         and opportunities. It ensures fair treatment in education, employment, politics, and
+          society as a whole.</p>
+      <p>When gender equality is achieved, both individuals and communities benefit. 
+        Women and men have the same chances to lead, learn, and succeed.</p>
+      <p>Gender equality is a basic human right and essential for a peaceful
+         and sustainable world.</p>
+    </div>
+    <div>
+    <h3>Important Points on Gender Equality</h3>
+  <ul>
+    <li>Equal rights and responsibilities for all genders.</li>
+    <li>Fair treatment in education, employment, and politics.</li>
+    <li>Gender equality benefits individuals and society.</li>
+    <li>Empowers women and ensures equal chances to succeed.</li>
+    <li>It's a basic human right and key for a peaceful, sustainable world.</li>
+  </ul>
+
+</div>
+    <!-- Review Form -->
+    <div class="review">
+      <h4>Share Your Opinion</h4>
+      <form id="reviewForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="text" id="last name" placeholder="your last name" required/>
+         <input type="text" id="gmail" placeholder="Your gmail" required />
+        <textarea id="message" rows="4" placeholder="Write your review or opinion..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div class="submitted-reviews" id="reviews"></div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.getElementById("reviewForm");
+    const reviewsDiv = document.getElementById("reviews");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name && message) {
+        const reviewPara = document.createElement("p");
+        reviewPara.innerHTML = `<strong>${name}:</strong> ${message}`;
+        reviewsDiv.prepend(reviewPara);
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+</html>
